@@ -68,16 +68,10 @@ Functions designed to manipulate a basic singly linked list structure defined as
 
 ### Compilation
 
-To compile the library, you will need `cc`, `gcc` or `clang` and `make`. Run the following command at the root of the repository:
+To compile the library, you will need `cc` and `make`. Run the following command at the root of the repository:
 
 ```bash
 make
-```
-
-To compile the library including the linked list (bonus) functions, run:
-
-```bash
-make bonus
 ```
 
 Other available rules in the `Makefile`:
@@ -99,12 +93,12 @@ To use this library in your own projects, include the header in your C files:
 When compiling your project, link the compiled library:
 
 ```bash
-gcc -Wall -Wextra -Werror your_source_file.c -L. -lft -o your_program
+cc -Wall -Wextra -Werror your_source_file.c -L. -lft -o your_program
 ```
 
 ## Resources
 
-* **Documentation:** `man` pages are the primary source of truth (e.g., `man 3 memset`, `man 3 strlen`).
+* **Documentation:** `man` pages are the primary source of truth (e.g., `man memset`, `man strlen`).
 
 * **Tutorials:** Various online articles and documentation (e.g., GNU C Library documentation) on C pointers, memory allocation (`malloc`, `free`), and Makefile structure.
 
