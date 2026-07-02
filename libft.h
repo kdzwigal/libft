@@ -124,7 +124,7 @@ void	*ft_calloc(size_t nmemb, size_t size);
 //is set to zero. If nmemb or size is 0, then calloc() returns either NULL,
 //or a unique pointer value that can later be successfully passed to free().
 
-char	*ft_strdup(char *src);
+char	*ft_strdup(const char *src);
 //The strdup() function returns a pointer to a new string which is a
 //duplicate of the string src. Memory for the new string is obtained with
 //malloc(3), and can be freed with free(3).
