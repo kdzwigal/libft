@@ -59,8 +59,8 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 #pattern rule
-%.0 : %.c
-	$(CC) $(CFALGS) -c $< -o $@
+%.o : %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 #clean rule
 clean:
